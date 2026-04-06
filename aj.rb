@@ -5,21 +5,21 @@
 class Aj < Formula
   desc "Background JIT compiler for autonomous coding agents"
   homepage "https://github.com/agent-jit/AgentJIT"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/agent-jit/AgentJIT/releases/download/v0.1.3/aj_0.1.3_darwin_amd64.tar.gz"
-      sha256 "ea9a7a0e7b75dbb6370877b2b1d0e5d67c2dc87979c2770a3e9114b3f2e4e99b"
+      url "https://github.com/agent-jit/AgentJIT/releases/download/v0.1.4/aj_0.1.4_darwin_amd64.tar.gz"
+      sha256 "842ca58704edd1215efe73f23fbfccfd090bc165cee29b1663757cab82208082"
 
       define_method(:install) do
         bin.install "aj"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/agent-jit/AgentJIT/releases/download/v0.1.3/aj_0.1.3_darwin_arm64.tar.gz"
-      sha256 "1a741af4684c046b70bea627345f71c90ce1d166485b1c82f05c3ec9d1b8e0f0"
+      url "https://github.com/agent-jit/AgentJIT/releases/download/v0.1.4/aj_0.1.4_darwin_arm64.tar.gz"
+      sha256 "8bd07912cd109f577c71457a8fc2fec6f6f9808f9a76201a6ad491e2ee40e7ba"
 
       define_method(:install) do
         bin.install "aj"
@@ -29,15 +29,15 @@ class Aj < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-jit/AgentJIT/releases/download/v0.1.3/aj_0.1.3_linux_amd64.tar.gz"
-      sha256 "2200d8522eddf9ce2c08f512007c0d570205d070f01634ec40410d495434cb23"
+      url "https://github.com/agent-jit/AgentJIT/releases/download/v0.1.4/aj_0.1.4_linux_amd64.tar.gz"
+      sha256 "5bd42b25126906b6b1af35b212c0bf6491088b60b9113375db2026460400de52"
       define_method(:install) do
         bin.install "aj"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/agent-jit/AgentJIT/releases/download/v0.1.3/aj_0.1.3_linux_arm64.tar.gz"
-      sha256 "05e8d3b65eed71340a9c9996b531e6240a0b20d1cf4d6c34fd7066f3e972df15"
+      url "https://github.com/agent-jit/AgentJIT/releases/download/v0.1.4/aj_0.1.4_linux_arm64.tar.gz"
+      sha256 "460c5b6c3d949018de13db4dc7bcd2116d5b2346be86906b45661ca79e21d8b5"
       define_method(:install) do
         bin.install "aj"
       end
